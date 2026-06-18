@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>Delete tracking strings</title>
+</head>
+<script src="scripts.js"></script>
+<body>
+<div>
+<label for)"url"/>Original url:
+<br>
+<input id="url" type="text" placeholder="https://url.here..." size=50/>
+<button onclick="clean()">Delete tracking strings</button>
+<br>
+<br>
+<label for="cleaned"/>Cleaned url:
+<br>
+<input id="cleaned" readonly type="text" value="" size=50/>
+<button onclick="copy()">Copy to clipboard</button>
+</div>
+<br>
+<div>
+<label for="status">Status:</label>
+<br>
+<input id="status" type="text" size="50" readonly style="color:gray"></input>
+</div>
+<br>
+<br>
+<div>
+<label for="filters">Filters:</label>
+<br>
+<textarea id="filters" cols="50" rows="20">
+ved=
+bi
+gfe_
+ei=
+source=
+gs_
+site=
+oq=
+esrc=
+uact=
+cd=
+cad=
+gws_
+atyp=
+vet=
+_u=
+je=
+dcr=
+ie=
+sei=
+sa=
+dpr=
+btn
+usg=
+cd=
+cad=
+uact=
+aqs=
+sourceid=
+sxsrf=
+rlz=
+i-would-rather-use-firefox=
+pcampaignid=
+sca_esv=
+sca_upv=
+iflsig=
+fbs=
+ictx=
+cshid=
+referrer=
+ref_
+src=
+?s=
+&s=
+cn=
+ref_url=
+&t=
+?t=
+hc_
+__tn__=
+eid=
+__xts__
+__cft__
+comment_tracking=
+dti=
+app=
+video_source=
+ftentidentifier=
+pageid=
+padding=
+ls_ref=
+action_history=
+tracking=
+referral_code=
+referral_story_type=
+eav=
+sfnsn=
+idorvanity=
+wtsid=
+rdc=
+rdr=
+paipv=
+_nc_x=
+_rdr=
+mibextid=
+igshid=
+igsh=
+feature=
+gclid=
+kw=
+si=
+pp=
+u_code=
+preview_pb=
+_d=
+_t=
+_r=
+timestamp=
+user_id=
+share_app_name=
+share_iid=
+source=
+?is=
+&is=
+</textarea>
+
+<!--
+Patterns listed here:
+
+google
+
+x
+
+facebook
+
+twitter
+
+instagram
+
+youtube
+
+tiktok
+
+!-->
+
+
+</div>
+</br>
+<div>
+<small>
+If something breaks, remove some of the filters and try again.
+<br>
+<br>
+Tracking id lists available for example:
+https://github.com/ClearURLs/Addon/
+<br>
+<br>
+Want the list updated? tracking@perunat.eu
+<br><br>
+This is intentionally a static web page that does not track anything (except what service provider logs which is something I cannot control)
+</small>
+</div>
+</body>
+</html> 	
