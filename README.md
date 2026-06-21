@@ -7,8 +7,11 @@ Remove tracking parameters from URLs
 
 Simply copy the files to a web server of your choosing. All you need to have is ability to host static files (or just copy them to your device locally).
 
-Thanks for the patterns goes to: https://github.com/ClearURLs/Addon/
+Get also the file data.min.json from https://github.com/ClearURLs/Addon/ and copy it to document root
++ modify index.html url to match your own url to prevent security issues with fetch method...
 
 Deployed to http://detrack.perunat.eu if someone wants to test it out.
+
+21.6.2026: significant improvements - uses data.min.json patterns directly to ensure updates can be made smoothly. 
 
 BYOCSS for now.
