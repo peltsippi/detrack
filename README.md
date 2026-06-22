@@ -12,6 +12,8 @@ Get also the file data.min.json from https://github.com/ClearURLs/Addon/ and cop
 
 Deployed to http://detrack.perunat.eu if someone wants to test it out.
 
+Now local mode is available. Just download local.html and scripts.js and store to same folder and open with your web browser
+
 21.6.2026: significant improvements - uses data.min.json patterns directly to ensure updates can be made smoothly. 
 
 BYOCSS for now.
