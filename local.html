@@ -1,0 +1,414 @@
+
+
+
+amazon - ^https?:\/\/(?:[a-z0-9-]+\.)*?amazon(?:\.[a-z]{2,}){1,} - p[fd]_rd_[a-z]*,qid,srs?,__mk_[a-z]{1,3}_[a-z]{1,3},spIA,ms3_c,[a-z%0-9]*ie,refRID,colii?d,[^a-z%0-9]adId,qualifier,_encoding,smid,field-lbr_brands_browse-bin,ref_?,th,sprefix,crid,keywords,cv_ct_[a-z]+,linkCode,creativeASIN,ascsubtag,aaxitk,hsa_cr_id,sb-ci-[a-z]+,rnid,dchild,camp,creative,content-id,dib,dib_tag,social_share,starsLeft,skipTwisterOG
+
+msn - ^https?:\/\/(?:[a-z0-9-]+\.)*?msn\.com - cvid,ocid
+
+amazon search - ^https?:\/\/(?:[a-z0-9-]+\.)*?amazon(?:\.[a-z]{2,}){1,}\/s\? - p[fd]_rd_[a-z]*,qid,srs?,__mk_[a-z]{1,3}_[a-z]{1,3},spIA,ms3_c,[a-z%0-9]*ie,refRID,colii?d,[^a-z%0-9]adId,qualifier,_encoding,smid,field-lbr_brands_browse-bin,ref_?,th,sprefix,crid,cv_ct_[a-z]+,linkCode,creativeASIN,ascsubtag,aaxitk,hsa_cr_id,sb-ci-[a-z]+,rnid,dchild,camp,creative
+
+fls-na.amazon - ^https?:\/\/(?:[a-z0-9-]+\.)*?fls-na\.amazon(?:\.[a-z]{2,}){1,} - 
+
+google - ^https?:\/\/(?:[a-z0-9-]+\.)*?google(?:\.[a-z]{2,}){1,} - ved,bi[a-z]*,gfe_[a-z]*,ei,source,gs_[a-z]*,site,oq,esrc,uact,cd,cad,gws_[a-z]*,atyp,vet,_u,je,dcr,ie,sei,sa,dpr,btn[a-z]*,usg,cd,cad,uact,aqs,sourceid,sxsrf,rlz,i-would-rather-use-firefox,pcampaignid,sca_(?:esv|upv),iflsig,fbs,ictx,cshid
+
+googlesyndication - ^https?:\/\/(?:[a-z0-9-]+\.)*?googlesyndication\.com - 
+
+doubleclick - ^https?:\/\/(?:[a-z0-9-]+\.)*?doubleclick(?:\.[a-z]{2,}){1,} - 
+
+googleadservices - ^https?:\/\/(?:[a-z0-9-]+\.)*?googleadservices\.com - 
+
+globalRules - .* - (?:%3F)?utm(?:_[a-z_]*)?,(?:%3F)?mtm(?:_[a-z_]*)?,(?:%3F)?ga_[a-z_]+,(?:%3F)?yclid,(?:%3F)?_openstat,(?:%3F)?fb_action_(?:types|ids),(?:%3F)?fb_(?:source|ref),(?:%3F)?fbclid,(?:%3F)?action_(?:object|type|ref)_map,(?:%3F)?gs_l,(?:%3F)?mkt_tok,(?:%3F)?hmb_(?:campaign|medium|source),(?:%3F)?gclid,(?:%3F)?srsltid,(?:%3F)?otm_[a-z_]*,(?:%3F)?cmpid,(?:%3F)?os_ehash,(?:%3F)?_ga,(?:%3F)?_gl,(?:%3F)?__twitter_impression,(?:%3F)?wt_?z?mc,(?:%3F)?wtrid,(?:%3F)?[a-z]?mc,(?:%3F)?dclid,Echobox,(?:%3F)?spm,(?:%3F)?vn(?:_[a-z]*)+,(?:%3F)?tracking_source,(?:%3F)?ceneo_spo,(?:%3F)?itm_(?:campaign|medium|source),(?:%3F)?__hsfp,(?:%3F)?__hssc,(?:%3F)?__hstc,(?:%3F)?_hsenc,(?:%3F)?__s,(?:%3F)?hsCtaTracking,(?:%3F)?mc_(?:eid|cid|tc),(?:%3F)?ml_subscriber,(?:%3F)?ml_subscriber_hash,(?:%3F)?msclkid,(?:%3F)?oly_anon_id,(?:%3F)?oly_enc_id,(?:%3F)?rb_clickid,(?:%3F)?s_cid,(?:%3F)?vero_conv,(?:%3F)?vero_id,(?:%3F)?wickedid,(?:%3F)?twclid
+
+adtech - ^https?:\/\/(?:[a-z0-9-]+\.)*?adtech(?:\.[a-z]{2,}){1,} - 
+
+bf-ad - ^https?:\/\/(?:[a-z0-9-]+\.)*?bf-ad(?:\.[a-z]{2,}){1,} - 
+
+amazon-adsystem - ^https?:\/\/(?:[a-z0-9-]+\.)*?amazon-adsystem(?:\.[a-z]{2,}){1,} - 
+
+adsensecustomsearchads - ^https?:\/\/(?:[a-z0-9-]+\.)*?adsensecustomsearchads(?:\.[a-z]{2,}){1,} - 
+
+youtube - ^https?:\/\/(?:[a-z0-9-]+\.)*?(youtube\.com|youtu\.be) - feature,gclid,kw,si,pp
+
+youtube_pagead - ^https?:\/\/(?:[a-z0-9-]+\.)*?youtube\.com\/pagead - 
+
+youtube_apiads - ^https?:\/\/(?:[a-z0-9-]+\.)*?youtube\.com\/api\/stats\/ads - 
+
+facebook - ^https?:\/\/(?:[a-z0-9-]+\.)*?facebook\.com - hc_[a-z_%\[\]0-9]*,[a-z]*ref[a-z]*,__tn__,eid,__(?:xts|cft)__(?:\[|%5B)\d(?:\]|%5D),comment_tracking,dti,app,video_source,ftentidentifier,pageid,padding,ls_ref,action_history,tracking,referral_code,referral_story_type,eav,sfnsn,idorvanity,wtsid,rdc,rdr,paipv,_nc_x,_rdr,mibextid
+
+twitter - ^https?:\/\/(?:[a-z0-9-]+\.)*?twitter.com - (?:ref_?)?src,s,cn,ref_url,t
+
+x - ^https?:\/\/(?:[a-z0-9-]+\.)*?x.com - (?:ref_?)?src,s,cn,ref_url,t
+
+reddit - ^https?:\/\/(?:[a-z0-9-]+\.)*?reddit.com - %24deep_link,\$deep_link,correlation_id,ref_campaign,ref_source,%243p,rdt,\$3p,%24original_url,\$original_url,_branch_match_id,share_id
+
+netflix - ^https?:\/\/(?:[a-z0-9-]+\.)*?netflix.com - trackId,tctx,jb[a-z]*?
+
+techcrunch - ^https?:\/\/(?:[a-z0-9-]+\.)*?techcrunch\.com - ncid,sr,sr_share,guccounter,guce_referrer,guce_referrer_sig
+
+bing - ^https?:\/\/(?:[a-z0-9-]+\.)*?bing(?:\.[a-z]{2,}){1,} - cvid,sk,sp,sc,qs,qp
+
+tweakers - ^https?:\/\/(?:[a-z0-9-]+\.)*?tweakers\.net - nb,u
+
+twitch - ^https?:\/\/(?:[a-z0-9-]+\.)*?twitch\.com - tt_medium,tt_content
+
+vivaldi - ^https?:\/\/(?:[a-z0-9-]+\.)*?vivaldi\.com - pk_campaign,pk_kwd
+
+indeed - ^https?:\/\/(?:[a-z0-9-]+\.)*?indeed\.com - from,alid,[a-z]*tk
+
+hhdotru - ^https?:\/\/(?:[a-z0-9-]+\.)*?hh\.ru - vss,t,swnt,grpos,ptl,stl,exp,plim
+
+ebay - ^https?:\/\/(?:[a-z0-9-]+\.)*?ebay(?:\.[a-z]{2,}){1,} - _trkparms,_trksid,_from,hash
+
+cnet - ^https?:\/\/(?:[a-z0-9-]+\.)*?cnet\.com - ftag
+
+imdb.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?imdb\.com - ref_,pf_rd_[a-z]*
+
+govdelivery.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?govdelivery\.com - 
+
+walmart.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?walmart\.com - u1,ath[a-z]*
+
+net-parade.it - ^https?:\/\/(?:[a-z0-9-]+\.)*?net\-parade\.it - pl
+
+prvnizpravy.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?prvnizpravy\.cz - xid
+
+youku.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?youku\.com - tpa
+
+nytimes.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?nytimes\.com - smid
+
+tchibo.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?tchibo\.de - wbdcd
+
+steampowered - ^https?:\/\/(?:[a-z0-9-]+\.)*?steampowered\.com - snr
+
+steamcommunity - ^https?:\/\/(?:[a-z0-9-]+\.)*?steamcommunity\.com - 
+
+mozaws.net - https?:\/\/outgoing\.prod\.mozaws\.net\/ - 
+
+shutterstock.com - https?:\/\/([a-z0-9-.]*\.)shutterstock\.com - src
+
+mozilla.org - ^https?:\/\/(?:[a-z0-9-]+\.)*?mozilla\.org - src,platform,redirect_source
+
+readdc.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?readdc\.com - ref
+
+dailycodingproblem.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?dailycodingproblem\.com - email
+
+github.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?github\.com - email_token,email_source
+
+deviantart.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?deviantart\.com - 
+
+site2.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?site2\.com - 
+
+site.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?site\.com - 
+
+site3.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?site3\.com - 
+
+aliexpress - ^https?:\/\/(?:[a-z0-9-]+\.)*?aliexpress(?:\.[a-z]{2,}){1,} - ws_ab_test,btsid,algo_expid,algo_pvid,gps-id,scm[_a-z-]*,cv,af,mall_affr,sk,dp,terminal_id,aff_request_id
+
+mozillazine.org - ^https?:\/\/(?:[a-z0-9-]+\.)*?mozillazine\.org - sid
+
+9gag.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?9gag\.com - ref
+
+linksynergy.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?linksynergy\.com - 
+
+giphy.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?giphy\.com - ref
+
+gate.sc - ^https?:\/\/(?:[a-z0-9-]+\.)*?gate\.sc - 
+
+vk.com - ^https?:\/\/vk\.com - 
+
+woot.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?woot\.com - ref_?
+
+vitamix.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?vitamix\.com - _requestid,cid,dl,di,sd,bi
+
+curseforge.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?curseforge\.com - 
+
+messenger.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?messenger\.com - 
+
+nypost.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?nypost\.com - __twitter_impression
+
+ozon.ru - ^https?:\/\/(?:[a-z0-9-]+\.)*?ozon\.ru - partner
+
+norml.org - ^https?:\/\/(?:[a-z0-9-]+\.)*?norml\.org - link_id,can_id,source,email_referrer,email_subject
+
+LinkedIn - ^https?:\/\/(?:[a-z0-9-]+\.)*?linkedin\.com - refId,trk,li[a-z]{2},trackingId
+
+LinkedIn Learning - ^https?:\/\/(?:[a-z0-9-]+\.)*?linkedin\.com\/learning - u
+
+smartredirect.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?smartredirect\.de - 
+
+SPIEGEL ONLINE - ^https?:\/\/(?:[a-z0-9-]+\.)*?spiegel\.de - b
+
+rutracker.org - ^https?:\/\/(?:[a-z0-9-]+\.)*?rutracker\.org - 
+
+instagram - ^https?:\/\/(?:[a-z0-9-]+\.)*?instagram\.com - igshid,igsh
+
+imgsrc.ru - ^https?:\/\/(?:[a-z0-9-]+\.)*?imgsrc\.ru - 
+
+boredpanda.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?boredpanda\.com - h
+
+awstrack.me - ^https?:\/\/(?:[a-z0-9-]+\.)*?awstrack\.me - 
+
+exactag.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?exactag\.com - 
+
+bahn.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?bahn\.de - dbkanal_[0-9]{3}
+
+disq.us - ^https?:\/\/(?:[a-z0-9-]+\.)*?disq\.us - cuid
+
+anonym.to - ^https?:\/\/(?:[a-z0-9-]+\.)*?anonym\.to - 
+
+moosejaw.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?moosejaw\.com - cm_lm,cm_mmc,webUserId,spMailingID,spUserID,spJobID,spReportId
+
+80000hours.org - ^https?:\/\/(?:[a-z0-9-]+\.)*?80000hours\.org - int_campaign
+
+spotify.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?spotify\.com - si
+
+yandex - ^https?:\/\/(?:[a-z0-9-]+\.)*?(?:yandex(?:\.[a-z]{2,}){1,}|ya\.ru) - lr,redircnt
+
+healio.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?healio\.com - ecp,m_bt
+
+zoho.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?zoho\.com - iref
+
+snapchat.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?snapchat\.com - sc_referrer,sc_ua
+
+medium.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?medium\.com - source
+
+swp.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?swp\.de - source
+
+wps.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?wps\.com - from
+
+accounts.firefox.com - ^https?:\/\/(?:accounts\.)?firefox\.com - entrypoint,form_type
+
+support.mozilla.org - ^https?:\/\/(?:support\.)?mozilla\.org - as
+
+ClearURLsTest - ^https?:\/\/kevinroebert\.gitlab\.io\/ClearUrls\/void\/index\.html - test
+
+ClearURLsTestBlock - ^https?:\/\/kevinroebert\.gitlab\.io\/ClearUrls\/void\/block\.svg - 
+
+ClearURLsTest2 - ^https?:\/\/test\.clearurls\.xyz\/void\/index\.html - test
+
+ClearURLsTestBlock2 - ^https?:\/\/test\.clearurls\.xyz\/void\/block\.svg - 
+
+diepresse.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?diepresse\.com - from,xtor,xt_at
+
+newsletter.lidl.com - ^https?:\/\/newsletter\.lidl(?:\.[a-z]{2,}){1,} - x
+
+allegro.pl - ^https?:\/\/(?:[a-z0-9-]+\.)*?allegro\.pl - reco_id,sid
+
+backcountry.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?backcountry\.com - CMP_SKU,MER,mr:trackingCode,mr:device,mr:adType,iv_,CMP_ID,k_clickid,rmatt,INT_ID,ti,fl
+
+meetup.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?meetup\.com - rv,_xtd
+
+apple.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?apple\.com - app,ign-itsc[a-z]+
+
+alabout.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?alabout\.com - 
+
+newyorker.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?newyorker\.com - source,bxid,cndid,esrc,mbid
+
+gog.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?gog\.com - track_click,link_id
+
+tradedoubler.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?tradedoubler\.com - 
+
+theguardian.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?theguardian\.com - CMP
+
+srvtrck.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?srvtrck\.com - 
+
+mysku.ru - ^https?:\/\/mysku\.ru - 
+
+admitad.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?admitad\.com - 
+
+taobao.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?taobao\.com - price,sourceType,suid,ut_sk,un,share_crt_v,sp_tk,cpp,shareurl,short_name,app,scm[_a-z-]*,pvid,algo_expid,algo_pvid,ns,abbucket,ali_refid,ali_trackid,acm,utparam,pos,abtest,trackInfo,utkn,scene,mytmenu,turing_bucket,lygClk,impid,bftTag,bftRwd,spm,_u
+
+tmall.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?tmall\.com - price,sourceType,suid,ut_sk,un,share_crt_v,sp_tk,cpp,shareurl,short_name,app,scm[_a-z-]*,pvid,algo_expid,algo_pvid,ns,abbucket,ali_refid,ali_trackid,acm,utparam,pos,abtest,trackInfo,user_number_id,utkn,scene,mytmenu,turing_bucket,lygClk,impid,bftTag,bftRwd,activity_id
+
+tb.cn - ^https?:\/\/(?:[a-z0-9-]+\.)*?tb\.cn - sm
+
+bilibili.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?bilibili\.com - callback,spm_id_from,from_source,from,seid,mid,share_source,msource,refer_from,share_from,share_medium,share_source,share_plat,share_tag,share_session_id,timestamp,unique_k,vd_source,plat_id,buvid,is_story_h5,up_id
+
+space.bilibili.com - ^https?:\/\/space\.bilibili\.com - spm_id_from
+
+m.bilibili.com - ^https?:\/\/m\.bilibili\.com - bbid,ts
+
+live.bilibili.com - ^https?:\/\/live\.bilibili\.com - visit_id,session_id,broadcast_type,is_room_feed
+
+marketscreener.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?marketscreener\.com - type_recherche,mots,noredirect,RewriteLast,lien,aComposeInputSearch,type_recherche_forum,add_mots,countview
+
+marketscreener.com search - ^https?:\/\/(?:[a-z0-9-]+\.)*?marketscreener\.com\/search\/\? - type_recherche,noredirect,RewriteLast,lien,aComposeInputSearch,type_recherche_forum,countview
+
+bestbuy.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?bestbuy\.com - irclickid,irgwc,loc,acampID,mpid,intl
+
+digidip.net - ^https?:\/\/(?:[a-z0-9-]+\.)*?digidip\.net - 
+
+tiktok.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?tiktok\.com - u_code,preview_pb,_d,_t,_r,timestamp,user_id,share_app_name,share_iid,source
+
+xiaohongshu.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?xiaohongshu\.com - xhsshare,author_share,type,xsec_source,share_from_user_hidden,app_version,ignoreEngage,app_platform,apptime,appuid,shareRedId,share_id,exSource,verifyUuid,verifyType,verifyBiz
+
+autoplus.fr - ^https?:\/\/(?:[a-z0-9-]+\.)*?autoplus\.fr - idprob,hash,sending_id,site_id,dr_tracker
+
+bigfishgames.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?bigfishgames\.com - pc,npc,npv[0-9]+,npi
+
+dpbolvw.net - ^https?:\/\/(?:[a-z0-9-]+\.)*?dpbolvw\.net - 
+
+humblebundle.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?humblebundle\.com - 
+
+cafepedagogique.net - ^https?:\/\/(?:[a-z0-9-]+\.)*?cafepedagogique\.net - actId,actCampaignType,actSource
+
+bloculus.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?bloculus\.com - tl_[a-z_]+
+
+mailpanion.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?mailpanion\.com - 
+
+signtr.website - ^https?:\/\/(?:[a-z0-9-]+\.)*?signtr\.website - 
+
+mailtrack.io - ^https?:\/\/(?:[a-z0-9-]+\.)*?mailtrack\.io - 
+
+zillow.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?zillow\.com - rtoken
+
+realtor.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?realtor\.com - ex,identityID,MID,RID
+
+redfin.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?redfin\.com - riftinfo
+
+epicgames.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?epicgames\.com - epic_affiliate,epic_gameId
+
+onet.pl - ^https?:\/\/(?:[a-z0-9-]+\.)*?onet\.pl - srcc,utm_v,utm_medium,utm_source
+
+allrecipes.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?allrecipes\.com - internalSource,referringId,referringContentType,clickId
+
+europe1.fr - ^https?:\/\/(?:[a-z0-9-]+\.)*?europe1\.fr - xtor
+
+effiliation.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?effiliation\.com - 
+
+argos.co.uk - ^https?:\/\/(?:[a-z0-9-]+\.)*?argos\.co\.uk - istCompanyId,istFeedId,istItemId,istBid,clickOrigin
+
+hlserve.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?hlserve\.com - 
+
+thunderbird.net - ^https?:\/\/(?:[a-z0-9-]+\.)*?thunderbird\.net - src
+
+cnbc.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?cnbc\.com - __source
+
+roblox.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?roblox\.com - refPageId
+
+cell.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?cell\.com - _returnURL
+
+academic.oup.com - ^https?:\/\/academic\.oup\.com - redirectedFrom
+
+flexlinkspro.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?flexlinkspro\.com - 
+
+agata88.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?agata88\.com - source
+
+hs.fi - ^https?:\/\/(?:[a-z0-9-]+\.)*?hs\.fi - share
+
+yle.fi - ^https?:\/\/(?:[a-z0-9-]+\.)*?yle\.fi - origin
+
+ccbill.com - ^https?:\/\/refer\.ccbill\.com - 
+
+flipkart - ^https?:\/\/(?:[a-z0-9-]+\.)*?flipkart\.com - otracker.?,ssid,[cilp]id,marketplace,store,srno,store,ppn,ppt,fm,collection-tab-name,sattr\[\],p\[\],st,qH,hpid,ctx,nnc
+
+idealo.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?idealo\.de - sid,src,siteId,lcb,leadOutUrl,offerListId,osId,cancelUrl,disc
+
+idealo-partner.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?idealo-partner\.com - 
+
+teletrader.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?teletrader\.com - internal
+
+webgains.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?webgains\.com - 
+
+deeplearning.ai - ^https?:\/\/(?:[a-z0-9-]+\.)*?deeplearning\.ai - ecid,_hsmi,_hsenc
+
+getpocket.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?getpocket\.com - 
+
+gamespot.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?gamespot\.com - PostType,ServiceType,ftag,UniqueID,TheTime
+
+tokopedia.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?tokopedia\.com - src,trkid,whid
+
+wkorea.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?wkorea\.com - ddw,ds_ch
+
+eonline.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?eonline\.com - source,medium,content
+
+reuters.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?reuters\.com - taid
+
+app.adjust.com - ^https?:\/\/app\.adjust\.com - 
+
+change.org - ^https?:\/\/(?:[a-z0-9-]+\.)*?change\.org - source_location,psf_variant,share_intent
+
+ceneo.pl - ^https?:\/\/(?:[a-z0-9-]+\.)*?ceneo\.pl - tag
+
+wired.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?wired\.com - intcid
+
+alibaba cloud arms - ^https?:\/\/arms-retcode\.aliyuncs\.com - pid,uid,tag,release,environment,sample,behavior,enableSPA,enableLinkTrace,page,begin,c2,c3,success,code,msg,api,traceId,pv_id,flag,sr,vp,ct,_v,sampling,dl,post_res
+
+nikkei - ^https?://(?:[a-z0-9-]+\.)*?nikkei\.co(?:m|\.jp) - adid,i_cid,n_cid,waad
+
+weibo - ^https?:\/\/(?:[a-z0-9-]+\.)*?weibo\.(cn|com) - weibo_id,dt_dapp
+
+fiverr.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?fiverr\.com - context_referrer,source,ref_ctx_id,funnel
+
+etsy.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?etsy\.com - click_key,click_sum,organic_search_click
+
+magento.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?magento\.com - itm_campaign,itm_medium,itm_source,itm_term
+
+novinky.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?novinky\.cz - dop_ab_variant,dop_source_zone_name,dop_req_id,dop_id,source,seq_no
+
+aktualne.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?aktualne\.cz - dop_ab_variant,dop_source_zone_name,dop_req_id,dop_id
+
+seznamzpravy.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?seznamzpravy\.cz - dop_ab_variant,dop_source_zone_name,dop_req_id,dop_id,source,seq_no
+
+billiger.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?billiger\.de - log,p
+
+respekt.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?respekt\.cz - sznclid,dop_ab_variant,dop_source_zone_name,dop_req_id,dop_id
+
+faei.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?faei\.cz - sznclid,dop_ab_variant,dop_source_zone_name,dop_req_id,dop_id
+
+iprima.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?iprima\.cz - sznclid,dop_ab_variant,dop_source_zone_name,dop_req_id,dop_id
+
+nova.cz - ^https?:\/\/(?:[a-z0-9-]+\.)*?nova\.cz - sznclid,dop_ab_variant,dop_source_zone_name,dop_req_id,dop_id
+
+duckduckgo - ^https?:\/\/(?:[a-z0-9-]+\.)*?duckduckgo\.com - 
+
+mercadolibre - ^https?:\/\/(?:[a-z0-9-]+\.)*?mercadoli[bv]re\.com - DEAL_ID,L,S,T,V,pdp_filters,position,search_layout,tracking_id,type,c_[_a-zA-Z]+,me\.[_a-zA-Z]+,reco_[_a-zA-Z]+,ad_click_id
+
+quizlet - ^https?:\/\/(?:[a-z0-9-]+\.)*?quizlet\.com - funnelUUID
+
+bbc - ^https?:\/\/(?:[a-z0-9-]+\.)*?bbc\.com - xtor,at_[a-z_]+
+
+airbnb - ^https?:\/\/(?:[a-z0-9-]+\.)*?airbnb\.(com|ae|ca|co\.in|co\.nz|co\.uk|co\.za|com\.au|com\.mt|com\.sg|de|gy|ie) - federated_search_id,search_type,source,source_impression_id
+
+partner-ads.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?partner-ads\.com - 
+
+kahoot.it - ^https?://(?:[a-z0-9-]+\.)*?kahoot\.it - refer_method
+
+href.li - ^https?:\/\/(?:[a-z0-9-]+\.)*?href\.li - 
+
+adform.net - ^https?:\/\/(?:[a-z0-9-]+\.)*?adform\.net - 
+
+artefact.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?artefact\.com - 
+
+awin1.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?awin1\.com - 
+
+telekom.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?telekom\.de - 
+
+cc.loginfra.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?loginfra\.com - 
+
+t.umblr.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?umblr\.com - 
+
+goodreads.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?goodreads\.com - from_search,from_srp,qid,rank,ac
+
+sohu - ^https?:\/\/(?:[a-z0-9-]+\.)*?sohu\.com - pvid,scm
+
+shopee - ^https?:\/\/(?:[a-z0-9-]+\.)*?shopee\.(com|co\.th|tw) - publish_id,sp_atk,xptdk
+
+lazada - ^https?:\/\/(?:[a-z0-9-]+\.)*?lazada\.(com|co\.th|co\.id|com\.my|com\.ph|sg|vn) - clickTrackInfo,abid,pvid,ad_src,spm,src,from,scm,pa,pid_pvid,did,mp,cid,impsrc,pos
+
+pantip.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?pantip\.com - 
+
+skimresources.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?skimresources\.com - 
+
+office-partner.de - ^https?:\/\/(?:[a-z0-9-]+\.)*?office-partner\.de - sPartner,campaign
+
+mozgcp.net - ^https?:\/\/(?:[a-z0-9-]+\.)*?mozgcp\.net - 
+
+thetimes.co.uk - ^https?:\/\/(?:[a-z0-9-]+\.)*?thetimes\.co\.uk - shareToken
+
+metro.co.uk - ^https?:\/\/(?:[a-z0-9-]+\.)*?metro\.co\.uk - ito
+
+forbes.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?forbes\.com - sh
+
+viglink.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?viglink\.com - 
+
+nordwolle.com - ^https?:\/\/(?:[a-z0-9-]+\.)*?nordwolle\.com - _sc,_sid,_ss
