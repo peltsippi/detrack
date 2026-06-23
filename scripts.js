@@ -56,7 +56,7 @@ function readRules(url) {
     if (tempdata[0] != "globalRules" && tempdata[0] != undefined) {
       var regex = new RegExp(tempdata[1]);
       if (regex.test(url) == true) {
-        //console.log("Found match between " + url + " and " + tempdata[1] +"! : " + tempdata[2]);
+        console.log("Found match between " + url + " and " + tempdata[1] +"! : " + tempdata[2]);
         //console.log("Index is " + index + " out of " + templist.length);
         output = tempdata[2];
       }
@@ -147,135 +147,9 @@ function clean() {
 	
 }
 
-function isTrackingUrl(url) {
-  var blocklist = readBlockList();
-  var isTracking = false;
-  blocklist.forEach((entry) =>  {
-    if (entry[0] != "globalRules") {
-      var regex = new RegExp(entry[1]);
-      if (regex.test(url) == true) {
-        isTracking = true;
-      }
-    }
-  });
-  return isTracking;
-}
-
-function isTrackingParameter(rules, parameter) {
-
-  //console.log("isTrackingparameter called with parameter: " + parameter + " and rules: " + rules);
-  var ruleArray = rules.split(",");
-  //console.log("rule array: ");
-  //console.log(ruleArray);
-  
-  var param = parameter.split("=");
-  
-  for (var i = 0; i < ruleArray.length; i++) {
-    var regex = new RegExp(ruleArray[i]);
-    if (regex.test(param) == true ) {
-      return true;
-    }
-  }
-  
-  return false;
-  
-  /*
-  	var data = parameter.split("=");
-	
-	var filters = getFilters();
-	
-	for (var i = 0; i < filters.length; i++) {
-		var regex = new RegExp(filters[i]);
-		//window.alert("Regex test result from data: " + data[0] + " with regex " + regex + " and end result: " + regex.test(data[0]));
-		
-		if (regex.test(data[0]) == true ) {
-			return true;
-			
-		}
-		
-		
-	}
-  
-  
-  */
-
-/*
-    if (isTrackingUrl(url)) {
-      console.log("Tracking url found");
-      var rules = readSpecificRules(url).split(",");
-      //if (isTrackingParameter(url, parameter)
-    }
-    else {
-      console.log("Url not in tracking database");
-      var globalList = readGlobalRules().split(",");
-      console.log(globalList);
-    }
- */
-
-  //isTrackingParameter(url, parameter)
-    return true;
-}
-
-function isTracking(parameter) {
-	var data = parameter.split("=");
-	
-	var filters = getFilters();
-	
-	for (var i = 0; i < filters.length; i++) {
-		var regex = new RegExp(filters[i]);
-		//window.alert("Regex test result from data: " + data[0] + " with regex " + regex + " and end result: " + regex.test(data[0]));
-		
-		if (regex.test(data[0]) == true ) {
-			return true;
-			
-		}
-		
-		
-	}
-	
-	return false;
-
-}
-
-
-
-function getFilters() {
-	var filterRAW = document.getElementById("filters").value;
-	var filters = filterRAW.split("\n");
-	
-	return filters;
-	
-}
-
-function cutTracking(url) {
-	
-	var tracking = hasTracking(url);
-	//window.alert("Tracking id found: " + tracking);
-	if (tracking.length > 0) {
-		var trackingStart = url.indexOf(tracking);
-		
-		if (url[trackingStart - 1] == "&") {
-			trackingStart--;
-			//window.alert("Deleting extra & away");
-		}
-		
-		var offset = trackingStart + tracking.length;
-		var trackingEnd = url.indexOf("&", offset);
-		
-		var remaining = url.substring(0, trackingStart);
-		
-		if (trackingEnd > 0) {
-			remaining += url.substring(trackingEnd, url.length);
-		}
-		
-		return remaining;
-	}
-	
-	return url;
-	
-}
 
 function hasTracking(url) {
+  console.log("is this used?");
 	var filterRAW = document.getElementById("filters").value;
 	var filters = filterRAW.split("\n");
 	
@@ -331,4 +205,21 @@ function getURLParameters(url) {
 	
 	return parameters;
 	
+}
+
+
+function isTrackingParameter(rules, parameter) {
+
+  //console.log("isTrackingparameter called with parameter: " + parameter + " and rules: " + rules);
+  var ruleArray = rules.split(",");
+  var param = parameter.split("=");
+  
+  for (var i = 0; i < ruleArray.length; i++) {
+    var regex = new RegExp(ruleArray[i]);
+    if (regex.test(param) == true ) {
+      return true;
+    }
+  }
+  
+  return false;
 }
