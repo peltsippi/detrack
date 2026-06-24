@@ -94,6 +94,28 @@ function readJSON() {
     .catch(error => console.error(error));	
 }
 
+function GetRandomString(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+
+function Randomise(parameter){
+  var data = parameter.split("=");
+  
+  var strLen = data[1].length;
+  
+  var rndStr = GetRandomString(strLen);
+  //console.log("Random string is now: " + rndStr);
+  
+  return data[0] + "=" + rndStr;
+
+}
+
 function clean() {
 	
 	writeURL("");
@@ -105,17 +127,17 @@ function clean() {
     
     var rules = readRules(url);
     
+    var cleaned = false;
+    
     for (var i = 0; i < parameters.length; i++) {
       if (isTrackingParameter(rules, parameters[i])) {
-        parameters.splice(i,1);
-        i--; //step index back since one entry was just deleted...
+        parameters[i] = Randomise(parameters[i]);
+        console.log("Parameter data changed to: " + parameters[i]);
+        //parameters.splice(i,1);
+        //i--; //step index back since one entry was just deleted...
+        cleaned = true;
       }
-      //if (isTrackingParameter(parameters[i], isTrackingUrl(url))) {
-      //  console.log("now we should delete the parameter");
-      //}
     }
-		
-	//	window.alert("Remaining parameters: " + parameters);
 	
 	if (parameters.length > 0) {
 		var cutPoint = url.indexOf("?");
@@ -139,8 +161,9 @@ function clean() {
 		
 	}
 	
-    if (url.length == originalLength) {
+    if (!cleaned) {
       window.alert("No tracking parameters found!");
+      updateStatus("No tracking parameters found!");
     }
 	writeURL(url);
 	
